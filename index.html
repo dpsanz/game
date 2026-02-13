@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL.EXE - Text Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="terminal-title">C:\ADVENTURE\GAME.EXE</span>
+            <div class="terminal-buttons">
+                <span class="btn-minimize">_</span>
+                <span class="btn-maximize">□</span>
+                <span class="btn-close">×</span>
+            </div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+            <div id="output">
+                <p class="system-text">Microsoft(R) Adventure Game [Version 1.0.0]</p>
+                <p class="system-text">(c) 2026 Adventure Corp. All rights reserved.</p>
+                <p class="system-text">════════════════════════════════════════════════════════════</p>
+                <p class="boot-text">Initializing game system...</p>
+                <p class="boot-text">Loading world data... OK</p>
+                <p class="boot-text">Starting adventure...</p>
+                <p class="system-text">════════════════════════════════════════════════════════════</p>
+            </div>
+            <div id="choices" style="display: none;">
+            </div>
+        </div>
+        <div class="input-line">
+            <span class="prompt">C:\ADVENTURE></span>
+            <input type="text" id="command-input" maxlength="1" autocomplete="off" autofocus>
+            <span class="cursor">_</span>
+        </div>
+        <div class="status-bar">
+            <span id="inventory-display">INVENTORY: [EMPTY]</span>
+            <span id="status">STATUS: READY</span>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
